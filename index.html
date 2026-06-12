@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>🏝️ Which Mediterranean Island Should We Escape To?</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-waves"><div class="wave"></div><div class="wave"></div><div class="wave"></div></div>
+<div class="sun"></div>
+<div id="app">
+
+<!-- WELCOME -->
+<div id="screen-welcome" class="screen active">
+  <div class="welcome-layout">
+    <div class="welcome-left">
+      <span class="welcome-emoji">🏝️</span>
+      <h1 class="welcome-title">Which Mediterranean Island Should We Escape To?</h1>
+      <p class="welcome-subtitle">Answer 14 questions and discover your perfect Mediterranean paradise — from the sun-bleached Cyclades to the volcanic Aeolian coast, the wild mountains of Corsica to the ancient temples of Malta.</p>
+      <div class="island-count-badge">🌊 19 islands · 14 questions · your perfect match</div>
+      <button class="btn-primary" onclick="startQuiz()">🧭 Start the Adventure →</button>
+      <div class="or-divider">— OR —</div>
+      <div class="welcome-alt-btns">
+        <button class="btn-alt" onclick="rollDice()">
+          <span class="alt-emoji">🎲</span>
+          <span>Roll the Dice<br><small style="font-weight:500;opacity:.7">Surprise me!</small></span>
+        </button>
+        <button class="btn-alt" onclick="showAllIslands()">
+          <span class="alt-emoji">🌍</span>
+          <span>Explore Freely<br><small style="font-weight:500;opacity:.7">Browse all islands</small></span>
+        </button>
+      </div>
+      <p class="pexels-notice">📷 Photos by <a href="https://www.pexels.com" target="_blank" style="color:var(--blue);font-weight:600">Pexels</a> · Requires internet connection</p>
+    </div>
+  </div>
+</div>
+
+<!-- QUESTION -->
+<div id="screen-question" class="screen">
+  <div class="quiz-layout">
+    <div class="quiz-sidebar">
+      <div class="quiz-sidebar-inner">
+        <div class="quiz-progress-title">Your Progress</div>
+        <div class="quiz-progress-label" id="progress-label">Question 1 of 14</div>
+        <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-fill" style="width:0%"></div></div>
+        <div class="quiz-steps" id="quiz-steps"></div>
+      </div>
+    </div>
+    <div class="quiz-main">
+      <!-- Mobile progress bar (shown instead of sidebar on small screens) -->
+      <div class="mobile-progress" id="mobile-progress">
+        <div class="mobile-progress-label">
+          <span id="mobile-progress-text">Question 1 of 13</span>
+          <span id="mobile-progress-cat"></span>
+        </div>
+        <div class="progress-bar-bg"><div class="progress-bar-fill" id="mobile-progress-fill" style="width:0%"></div></div>
+      </div>
+      <div class="q-card">
+        <div class="q-category" id="q-category"></div>
+        <h2 class="q-text" id="q-text"></h2>
+        <p class="q-hint" id="q-hint"></p>
+        <div class="options-grid" id="options-container"></div>
+        <div class="nav-row">
+          <button class="btn-nav-prev" id="btn-prev" onclick="prevQuestion()">← Back</button>
+          <button class="btn-nav-next" id="btn-next" onclick="nextQuestion()">Next →</button>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:16px">
+        <button class="btn-outline" onclick="confirmRestart()" style="width:auto;padding:9px 20px;font-size:13px">↺ Restart Quiz</button>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- LOADING -->
+<div id="screen-loading" class="screen">
+  <div class="loading-wrap">
+    <span class="loading-emoji" id="loading-emoji">🔮</span>
+    <p class="loading-msg" id="loading-msg">Consulting the Oracle of Delphi...</p>
+    <p class="loading-sub">Charting your perfect Mediterranean escape</p>
+  </div>
+</div>
+
+<!-- RESULTS -->
+<div id="screen-results" class="screen">
+  <div class="results-header">
+    <p class="results-eyebrow">Your Perfect Match</p>
+    <h2 class="results-title">🏆 Your Mediterranean Island Awaits!</h2>
+    <p class="results-sub">Based on your answers, here is where you should escape to</p>
+  </div>
+  <div class="winner-card" id="winner-card">
+    <div id="winner-hero-wrap"></div>
+    <div class="winner-body">
+      <div class="winner-body-grid">
+        <div>
+          <div class="winner-flag-name">
+            <img class="winner-flag-img" id="winner-flag-img" src="" alt="">
+            <div class="winner-name" id="winner-name"></div>
+          </div>
+          <div class="winner-tagline" id="winner-tagline"></div>
+          <div class="match-bar-wrap">
+            <div class="match-bar-label"><span>Match score</span><span class="match-pct" id="winner-pct"></span></div>
+            <div class="match-bar-bg"><div class="match-bar-fill" id="winner-bar" style="width:0%"></div></div>
+          </div>
+          <p class="winner-desc" id="winner-desc"></p>
+          <div class="info-grid">
+            <div class="info-card"><div class="info-card-label">📅 Best time</div><div class="info-card-value" id="winner-time"></div></div>
+            <div class="info-card"><div class="info-card-label">💰 Budget</div><div class="info-card-value" id="winner-budget"></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="info-card-label" style="margin-bottom:8px">🎯 Top activities</div>
+          <div class="activities-list" id="winner-activities"></div>
+          <div class="funfact-box"><div class="ff-label">🤓 Fun fact</div><p id="winner-funfact"></p></div>
+          <button class="btn-explore" id="winner-explore">🗺️ Explore Everything About This Island →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="runners-title">Also great matches for you...</p>
+  <div class="runners-grid" id="runners-container"></div>
+  <button class="btn-gold" onclick="showAllIslands()">🌍 Explore All 19 Mediterranean Islands</button>
+  <div class="results-actions">
+    <button class="btn-explore" style="flex:1;min-width:130px" onclick="confirmRestart()">↺ Start Over</button>
+    <button class="btn-outline" onclick="redoQuiz()">✏️ Redo Answers</button>
+  </div>
+  <p style="text-align:center;margin-top:16px;font-size:13px;color:var(--text-light)">💌 Save or share this page with your travel companion to compare results!</p>
+</div>
+
+<!-- ALL ISLANDS -->
+<div id="screen-all-islands" class="screen">
+  <button class="detail-back-btn" id="all-islands-back" onclick="backFromAllIslands()">← Back</button>
+  <div class="all-islands-header">
+    <p class="results-eyebrow">All 19 Islands</p>
+    <h2 class="results-title">🌍 Explore Every Mediterranean Island</h2>
+    <p class="results-sub">Tap any island to see its full guide, photos, beaches & restaurants</p>
+  </div>
+  <div class="all-islands-grid" id="all-islands-grid"></div>
+</div>
+
+<!-- DETAIL -->
+<div id="screen-detail" class="screen">
+  <button class="detail-back-btn" id="detail-back-btn" onclick="backFromDetail()">← Back</button>
+  <div class="detail-layout">
+    <div class="detail-sidebar">
+      <div>
+        <div class="winner-flag-name" style="margin-bottom:6px">
+          <img class="detail-island-flag-img" id="detail-flag-img" src="" alt="">
+          <h1 class="detail-island-name" id="detail-name"></h1>
+        </div>
+        <p class="detail-tagline" id="detail-tagline"></p>
+      </div>
+      <div class="tab-bar-desktop" id="tab-bar"></div>
+      <div style="margin-top:16px;display:flex;flex-direction:column;gap:10px">
+        <button class="btn-explore" onclick="backFromDetail()">← Back</button>
+        <button class="btn-outline" onclick="confirmRestart()">↺ Start Over</button>
+      </div>
+    </div>
+    <div class="detail-main">
+      <div id="detail-hero-wrap" style="margin-bottom:20px"></div>
+
+      <div id="tab-panels"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Loading overlay shown while data files fetch -->
+<div id="app-loading" style="position:fixed;inset:0;background:linear-gradient(160deg,#c9e8f5,#e8f4f0,#f5eedc);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999">
+  <div style="font-size:56px;margin-bottom:16px;animation:float 2s ease-in-out infinite">🏝️</div>
+  <div style="font-size:16px;font-weight:600;color:#1a6fa8">Loading your Mediterranean guide...</div>
+</div>
+
+</div><!-- /#app -->
+<script src="app.js"></script>
+</body>
+</html>
