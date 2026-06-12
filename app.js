@@ -314,9 +314,7 @@ function buildHeroGrid(key, isl) {
   queries.slice(0, count).forEach((q, idx) => {
     const cell = document.createElement('div'); cell.className = 'hero-cell';
     cell.innerHTML = `<div class="photo-loading">${isl.emoji}</div>`;
-    const lbl = document.createElement('div'); lbl.className = 'hero-cell-label';
-    lbl.textContent = q.replace(/\s*,\s*[^,]+$/, '').replace(/\s*\([^)]*\)/g, '').trim();
-    cell.appendChild(lbl); grid.appendChild(cell);
+    grid.appendChild(cell);
     cell.onclick = () => window.open(googleImgURL(q, isl.name), '_blank');
     if (photos[idx]) {
       applyPhoto(cell, photos[idx]);

@@ -157,10 +157,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
 .hero-cell img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;
   top:0;left:0;opacity:0;transition:opacity .5s;z-index:1}
-.hero-cell-label{position:absolute;bottom:0;left:0;right:0;
-  background:linear-gradient(transparent,rgba(0,0,0,0.8));color:#fff;
-  font-size:10px;font-weight:700;padding:18px 6px 5px;text-align:center;
-  text-transform:uppercase;letter-spacing:.5px;z-index:3;pointer-events:none}
+
 .photo-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:38px;z-index:0;opacity:0.5}
 
 /* Winner info */
