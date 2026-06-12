@@ -1,0 +1,751 @@
+[
+  {
+    "category": "🌍 Where in the Mediterranean?",
+    "text": "Which part of the Mediterranean calls to you most?",
+    "hint": "This shapes everything — it acts as a strong filter on your results.",
+    "is_country_q": true,
+    "options": [
+      {
+        "emoji": "🇬🇷",
+        "text": "Greece — Aegean blues, ancient ruins & island life",
+        "country_key": "greece",
+        "scores": {}
+      },
+      {
+        "emoji": "🇮🇹",
+        "text": "Italy — Baroque cities, volcanoes & ancient mystery",
+        "country_key": "italy",
+        "scores": {}
+      },
+      {
+        "emoji": "🇫🇷",
+        "text": "France — Wild mountains, maquis & turquoise coves",
+        "country_key": "france",
+        "scores": {}
+      },
+      {
+        "emoji": "🇪🇸",
+        "text": "Spain — Sunshine, fiestas & stylish beaches",
+        "country_key": "spain",
+        "scores": {}
+      },
+      {
+        "emoji": "🇲🇹",
+        "text": "Malta — Ancient temples, Knights & the Blue Lagoon",
+        "country_key": "malta",
+        "scores": {}
+      },
+      {
+        "emoji": "🇨🇾",
+        "text": "Cyprus — Aphrodite's island, ancient ruins & halloumi",
+        "country_key": "cyprus",
+        "scores": {}
+      },
+      {
+        "emoji": "🤷",
+        "text": "No preference — show me the best overall match",
+        "country_key": "any",
+        "scores": {}
+      }
+    ]
+  },
+  {
+    "category": "✨ What draws you there?",
+    "text": "What is the single thing that makes a holiday feel worthwhile to you?",
+    "hint": "Be honest — this is the most important question after the country choice.",
+    "options": [
+      {
+        "emoji": "🏛️",
+        "text": "Standing in front of something ancient and extraordinary",
+        "scores": {
+          "malta": 5,
+          "sicily": 5,
+          "crete": 4,
+          "rhodes": 4,
+          "cyprus": 4,
+          "naxos": 3,
+          "santorini": 2,
+          "sardinia": 3
+        }
+      },
+      {
+        "emoji": "🌊",
+        "text": "Water so clear and turquoise it doesn't look real",
+        "scores": {
+          "formentera": 5,
+          "sardinia": 5,
+          "milos": 4,
+          "menorca": 4,
+          "kefalonia": 4,
+          "thassos": 3,
+          "paros": 3,
+          "ibiza": 2,
+          "naxos": 2
+        }
+      },
+      {
+        "emoji": "🍴",
+        "text": "Eating the best food of my life, every single day",
+        "scores": {
+          "sicily": 5,
+          "corsica": 4,
+          "sardinia": 4,
+          "crete": 4,
+          "ischia": 4,
+          "mallorca": 3,
+          "cyprus": 3
+        }
+      },
+      {
+        "emoji": "💕",
+        "text": "Complete romance — the kind you remember forever",
+        "scores": {
+          "santorini": 5,
+          "kefalonia": 4,
+          "formentera": 4,
+          "corsica": 3,
+          "ibiza": 3,
+          "ischia": 3,
+          "paros": 3
+        }
+      },
+      {
+        "emoji": "🧗",
+        "text": "Wild nature — mountains, gorges, or remote wilderness",
+        "scores": {
+          "corsica": 5,
+          "kefalonia": 4,
+          "crete": 4,
+          "sardinia": 3,
+          "thassos": 3,
+          "sicily": 3,
+          "menorca": 3
+        }
+      }
+    ]
+  },
+  {
+    "category": "🏔️ Your ideal landscape",
+    "text": "Which landscape would you never get tired of looking at?",
+    "hint": "Imagine waking up to this view every morning.",
+    "options": [
+      {
+        "emoji": "🌋",
+        "text": "Volcanic drama — calderas, black sand, towering white cliffs over electric-blue coves",
+        "scores": {
+          "zakynthos": 5,
+          "santorini": 4,
+          "milos": 4,
+          "sicily": 3,
+          "ischia": 4
+        }
+      },
+      {
+        "emoji": "⛰️",
+        "text": "Dense pine forest tumbling into turquoise sea",
+        "scores": {
+          "corsica": 5,
+          "thassos": 5,
+          "kefalonia": 3,
+          "sardinia": 3,
+          "menorca": 3
+        }
+      },
+      {
+        "emoji": "🏰",
+        "text": "Ancient stone — temples, castles, medieval citadels",
+        "scores": {
+          "malta": 5,
+          "rhodes": 5,
+          "sicily": 4,
+          "cyprus": 4,
+          "crete": 3,
+          "naxos": 2
+        }
+      },
+      {
+        "emoji": "🏝️",
+        "text": "Caribbean-blue flat water and powder-white sandbanks",
+        "scores": {
+          "formentera": 5,
+          "menorca": 4,
+          "sardinia": 4,
+          "thassos": 3,
+          "naxos": 3,
+          "paros": 2
+        }
+      },
+      {
+        "emoji": "🏘️",
+        "text": "Whitewashed Cycladic villages spilling down clifftops",
+        "scores": {
+          "santorini": 4,
+          "milos": 3,
+          "naxos": 4,
+          "paros": 4,
+          "rhodes": 2
+        }
+      }
+    ]
+  },
+  {
+    "category": "🌊 How do you enjoy the sea?",
+    "text": "What does your ideal sea experience actually look like?",
+    "hint": "One answer only — what would you miss most if it wasn't there?",
+    "options": [
+      {
+        "emoji": "🚣",
+        "text": "Getting to a hidden cove by boat that nobody else reaches",
+        "scores": {
+          "sardinia": 5,
+          "milos": 5,
+          "corsica": 4,
+          "kefalonia": 3,
+          "ischia": 3,
+          "ibiza": 3
+        }
+      },
+      {
+        "emoji": "🤿",
+        "text": "Snorkelling over extraordinary sea life and clear water",
+        "scores": {
+          "formentera": 5,
+          "sardinia": 4,
+          "milos": 4,
+          "malta": 4,
+          "zakynthos": 3,
+          "cyprus": 3,
+          "thassos": 3
+        }
+      },
+      {
+        "emoji": "🏄",
+        "text": "Windsurfing, kitesurfing or serious watersports",
+        "scores": {
+          "paros": 5,
+          "naxos": 4,
+          "menorca": 3,
+          "rhodes": 3,
+          "zakynthos": 2
+        }
+      },
+      {
+        "emoji": "☂️",
+        "text": "Organised sunbeds, cold drinks, everything on hand",
+        "scores": {
+          "rhodes": 4,
+          "crete": 4,
+          "cyprus": 3,
+          "mallorca": 3,
+          "zakynthos": 3,
+          "ibiza": 3
+        }
+      },
+      {
+        "emoji": "🌊",
+        "text": "Long wild beaches to walk — no sunbeds, just space",
+        "scores": {
+          "menorca": 5,
+          "corsica": 4,
+          "thassos": 4,
+          "naxos": 3,
+          "sardinia": 3,
+          "kefalonia": 3
+        }
+      }
+    ]
+  },
+  {
+    "category": "🍽️ Food & dining",
+    "text": "Which kind of eating experience matters most to you on holiday?",
+    "hint": "Think about the meals you actually talk about afterwards.",
+    "options": [
+      {
+        "emoji": "🌿",
+        "text": "Ancient food culture — recipes unchanged for centuries",
+        "scores": {
+          "sicily": 5,
+          "sardinia": 5,
+          "crete": 4,
+          "corsica": 4,
+          "malta": 3,
+          "cyprus": 3
+        }
+      },
+      {
+        "emoji": "⭐",
+        "text": "Michelin-level cooking and serious wine lists",
+        "scores": {
+          "mallorca": 5,
+          "sicily": 4,
+          "santorini": 4,
+          "ischia": 3,
+          "corsica": 3
+        }
+      },
+      {
+        "emoji": "🧀",
+        "text": "Simple honest cooking — local cheese, house wine, a village square taverna",
+        "scores": {
+          "naxos": 5,
+          "thassos": 4,
+          "crete": 3,
+          "corsica": 3,
+          "menorca": 3,
+          "kefalonia": 3,
+          "cyprus": 3
+        }
+      },
+      {
+        "emoji": "🍹",
+        "text": "Beach clubs, aperitivo culture, cocktails at sunset",
+        "scores": {
+          "ibiza": 5,
+          "formentera": 3,
+          "santorini": 3,
+          "paros": 2,
+          "mallorca": 2
+        }
+      },
+      {
+        "emoji": "🥙",
+        "text": "Street food, market stalls, cheap and extraordinary",
+        "scores": {
+          "sicily": 5,
+          "crete": 4,
+          "malta": 4,
+          "rhodes": 3,
+          "naxos": 3,
+          "cyprus": 3
+        }
+      }
+    ]
+  },
+  {
+    "category": "💶 Budget reality",
+    "text": "Which honestly describes how you approach holiday spending?",
+    "hint": "Being realistic here leads to a much better recommendation.",
+    "options": [
+      {
+        "emoji": "💎",
+        "text": "We spend freely — money isn't the constraint",
+        "scores": {
+          "santorini": 5,
+          "formentera": 5,
+          "ibiza": 4,
+          "sardinia": 4,
+          "mallorca": 4,
+          "ischia": 3
+        }
+      },
+      {
+        "emoji": "🏨",
+        "text": "Comfortable — good hotels and restaurants, occasional splurge",
+        "scores": {
+          "mallorca": 4,
+          "corsica": 4,
+          "paros": 4,
+          "menorca": 4,
+          "kefalonia": 3,
+          "rhodes": 3,
+          "cyprus": 3,
+          "milos": 3
+        }
+      },
+      {
+        "emoji": "⚖️",
+        "text": "Mid-range — quality matters but we watch costs",
+        "scores": {
+          "crete": 4,
+          "sicily": 4,
+          "naxos": 3,
+          "paros": 3,
+          "sardinia": 3,
+          "rhodes": 3,
+          "zakynthos": 3,
+          "thassos": 3
+        }
+      },
+      {
+        "emoji": "💰",
+        "text": "Value-focused — we want the most for the least",
+        "scores": {
+          "thassos": 5,
+          "naxos": 4,
+          "sicily": 4,
+          "crete": 4,
+          "zakynthos": 3,
+          "cyprus": 3
+        }
+      },
+      {
+        "emoji": "🤷",
+        "text": "We don't really think about it",
+        "scores": {
+          "paros": 3,
+          "crete": 3,
+          "milos": 2,
+          "santorini": 2,
+          "mallorca": 2,
+          "menorca": 2
+        }
+      }
+    ]
+  },
+  {
+    "category": "🧭 How you explore",
+    "text": "Which best describes how you want to discover the island?",
+    "hint": "This single answer shapes your whole trip more than you might expect.",
+    "options": [
+      {
+        "emoji": "🚗",
+        "text": "Rental car — total freedom, no fixed plan, every corner reachable",
+        "scores": {
+          "crete": 5,
+          "corsica": 5,
+          "sardinia": 5,
+          "sicily": 4,
+          "cyprus": 5,
+          "kefalonia": 4,
+          "mallorca": 3,
+          "thassos": 3,
+          "menorca": 3
+        }
+      },
+      {
+        "emoji": "⛵",
+        "text": "By sea — boat trips, water taxis, arriving at hidden coves by water",
+        "scores": {
+          "milos": 5,
+          "sardinia": 4,
+          "ischia": 4,
+          "corsica": 3,
+          "ibiza": 3,
+          "kefalonia": 3,
+          "zakynthos": 4
+        }
+      },
+      {
+        "emoji": "🏙️",
+        "text": "Urban explorer — old towns, markets, getting beautifully lost in streets",
+        "scores": {
+          "malta": 5,
+          "rhodes": 5,
+          "sicily": 4,
+          "ibiza": 4,
+          "paros": 4,
+          "naxos": 3,
+          "crete": 3
+        }
+      },
+      {
+        "emoji": "🥾",
+        "text": "On foot — hiking trails, coastal paths, climbing to a viewpoint",
+        "scores": {
+          "corsica": 5,
+          "menorca": 5,
+          "crete": 4,
+          "thassos": 3,
+          "mallorca": 3,
+          "kefalonia": 3,
+          "sardinia": 3
+        }
+      },
+      {
+        "emoji": "😌",
+        "text": "Staying put — one beautiful base, deep not wide, no rushing",
+        "scores": {
+          "formentera": 5,
+          "santorini": 4,
+          "naxos": 4,
+          "thassos": 4,
+          "paros": 3,
+          "ibiza": 3,
+          "ischia": 3,
+          "kefalonia": 5
+        }
+      }
+    ]
+  },
+  {
+    "category": "🌙 Evenings",
+    "text": "What does your ideal evening on holiday look like?",
+    "hint": "No wrong answer — what genuinely recharges you?",
+    "options": [
+      {
+        "emoji": "🎉",
+        "text": "World-class clubs and dancing until sunrise",
+        "scores": {
+          "ibiza": 5,
+          "mallorca": 2,
+          "rhodes": 2
+        }
+      },
+      {
+        "emoji": "🌅",
+        "text": "Sunset drinks on a clifftop then a long romantic dinner",
+        "scores": {
+          "santorini": 5,
+          "formentera": 4,
+          "kefalonia": 4,
+          "corsica": 3,
+          "ischia": 3,
+          "milos": 3
+        }
+      },
+      {
+        "emoji": "🎵",
+        "text": "Local taverna with live music, carafe of house wine",
+        "scores": {
+          "crete": 5,
+          "sicily": 4,
+          "corsica": 4,
+          "naxos": 4,
+          "sardinia": 3,
+          "paros": 3,
+          "cyprus": 3
+        }
+      },
+      {
+        "emoji": "🍷",
+        "text": "Stylish bar-hopping, aperitivo, meeting interesting people",
+        "scores": {
+          "paros": 4,
+          "ibiza": 3,
+          "mallorca": 3,
+          "rhodes": 3,
+          "zakynthos": 3,
+          "malta": 3
+        }
+      },
+      {
+        "emoji": "📖",
+        "text": "Early dinner, a quiet walk, and in bed by 10",
+        "scores": {
+          "formentera": 4,
+          "thassos": 4,
+          "menorca": 4,
+          "milos": 3,
+          "kefalonia": 3,
+          "naxos": 3
+        }
+      }
+    ]
+  },
+  {
+    "category": "🏠 Where you sleep",
+    "text": "What is your ideal place to stay?",
+    "hint": "Your accommodation sets the whole tone of the trip.",
+    "options": [
+      {
+        "emoji": "🏩",
+        "text": "Clifftop cave hotel or villa with an infinity pool",
+        "scores": {
+          "santorini": 5,
+          "kefalonia": 4,
+          "corsica": 3,
+          "ibiza": 3,
+          "mallorca": 3,
+          "milos": 3
+        }
+      },
+      {
+        "emoji": "🌾",
+        "text": "Agriturismo or rural finca in the countryside",
+        "scores": {
+          "sardinia": 5,
+          "corsica": 4,
+          "ibiza": 4,
+          "sicily": 4,
+          "mallorca": 3,
+          "menorca": 3,
+          "cyprus": 3
+        }
+      },
+      {
+        "emoji": "🏛️",
+        "text": "Boutique hotel inside a historic old town",
+        "scores": {
+          "malta": 5,
+          "rhodes": 5,
+          "sicily": 4,
+          "ibiza": 3,
+          "naxos": 3,
+          "crete": 3
+        }
+      },
+      {
+        "emoji": "🌴",
+        "text": "Beach resort — everything on site, no thinking required",
+        "scores": {
+          "rhodes": 4,
+          "crete": 4,
+          "cyprus": 4,
+          "mallorca": 3,
+          "zakynthos": 3
+        }
+      },
+      {
+        "emoji": "🏡",
+        "text": "Private house rental — kitchen, space, independence",
+        "scores": {
+          "crete": 4,
+          "corsica": 3,
+          "kefalonia": 3,
+          "menorca": 3,
+          "naxos": 3,
+          "paros": 3,
+          "thassos": 3
+        }
+      }
+    ]
+  },
+  {
+    "category": "🏛️ History & culture",
+    "text": "How important is deep history and culture to this trip?",
+    "hint": "Honest answers here matter — some islands are about beaches, others about civilisations.",
+    "options": [
+      {
+        "emoji": "🔍",
+        "text": "It's the whole point — I want layers of civilisation",
+        "scores": {
+          "malta": 5,
+          "sicily": 5,
+          "crete": 5,
+          "rhodes": 4,
+          "cyprus": 4,
+          "sardinia": 4,
+          "naxos": 3
+        }
+      },
+      {
+        "emoji": "🗿",
+        "text": "I'd love a couple of remarkable sites alongside the beaches",
+        "scores": {
+          "santorini": 4,
+          "milos": 3,
+          "naxos": 3,
+          "paros": 3,
+          "thassos": 3,
+          "kefalonia": 3,
+          "zakynthos": 2,
+          "corsica": 3,
+          "ischia": 3
+        }
+      },
+      {
+        "emoji": "🏘️",
+        "text": "Local life and traditions matter more than monuments",
+        "scores": {
+          "crete": 4,
+          "corsica": 4,
+          "sardinia": 4,
+          "naxos": 4,
+          "thassos": 4,
+          "kefalonia": 3,
+          "menorca": 3,
+          "cyprus": 3
+        }
+      },
+      {
+        "emoji": "🏖️",
+        "text": "I'm here for the sea — culture is a nice extra, not essential",
+        "scores": {
+          "formentera": 4,
+          "milos": 4,
+          "ibiza": 3,
+          "paros": 3,
+          "thassos": 3,
+          "menorca": 3,
+          "zakynthos": 3
+        }
+      },
+      {
+        "emoji": "🍽️",
+        "text": "Food culture IS the culture I care about",
+        "scores": {
+          "sicily": 5,
+          "sardinia": 4,
+          "corsica": 4,
+          "crete": 4,
+          "ischia": 4,
+          "malta": 3,
+          "mallorca": 3
+        }
+      }
+    ]
+  },
+  {
+    "category": "👫 What kind of trip?",
+    "text": "Which best describes what you're looking for from this trip?",
+    "hint": "The honest answer here leads to a much more personalised recommendation.",
+    "options": [
+      {
+        "emoji": "💕",
+        "text": "Romantic escape — just the two of us, unforgettable moments",
+        "scores": {
+          "santorini": 5,
+          "formentera": 4,
+          "kefalonia": 4,
+          "corsica": 3,
+          "ischia": 4,
+          "paros": 3,
+          "milos": 3,
+          "ibiza": 2
+        }
+      },
+      {
+        "emoji": "🧗",
+        "text": "Active adventure — hiking, water sports, physical challenge",
+        "scores": {
+          "corsica": 5,
+          "milos": 4,
+          "crete": 4,
+          "sardinia": 3,
+          "kefalonia": 3,
+          "menorca": 4,
+          "thassos": 3,
+          "mallorca": 3
+        }
+      },
+      {
+        "emoji": "🍴",
+        "text": "Gastronomic journey — exceptional eating is the whole point",
+        "scores": {
+          "sicily": 5,
+          "sardinia": 4,
+          "corsica": 4,
+          "crete": 4,
+          "ischia": 5,
+          "mallorca": 4,
+          "cyprus": 3
+        }
+      },
+      {
+        "emoji": "🎉",
+        "text": "Social & lively — meeting people, nightlife, energy and buzz",
+        "scores": {
+          "ibiza": 5,
+          "paros": 4,
+          "rhodes": 3,
+          "mallorca": 3,
+          "zakynthos": 3,
+          "santorini": 2
+        }
+      },
+      {
+        "emoji": "🏛️",
+        "text": "Cultural immersion — history, archaeology, understanding a place deeply",
+        "scores": {
+          "malta": 5,
+          "sicily": 5,
+          "crete": 5,
+          "rhodes": 4,
+          "cyprus": 4,
+          "sardinia": 3,
+          "naxos": 3
+        }
+      }
+    ]
+  }
+]
