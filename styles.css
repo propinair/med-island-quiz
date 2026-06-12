@@ -150,9 +150,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 .hero-cell{position:relative;overflow:hidden;
   background:linear-gradient(90deg,#e8f4fd 25%,#d0e8f5 50%,#e8f4fd 75%);
   background-size:200% 100%;animation:shimmer 1.8s infinite linear;
-  display:flex;align-items:center;justify-content:center;font-size:38px;cursor:pointer;
-  transition:transform .18s}
-.hero-cell:hover{transform:scale(1.02);z-index:2}
+  display:flex;align-items:center;justify-content:center;font-size:38px}
 .hero-cell.loaded{animation:none;background:#e8f4fd}
 @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
 .hero-cell img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;
@@ -341,6 +339,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 .overview-text{font-size:15px;color:var(--text-mid);line-height:1.75;margin-bottom:16px}
 .funfact-box-inline{background:linear-gradient(135deg,var(--sand),#fce9b0);border-left:4px solid var(--sand-dark);
   border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:12px 14px;margin-bottom:16px}
+.island-quote{position:relative;margin:0 0 20px;padding:20px 24px 16px 52px;
+  background:rgba(255,255,255,0.7);border-radius:var(--radius-sm);
+  border-left:3px solid var(--blue-mid)}
+.island-quote::before{content:'“';position:absolute;left:12px;top:4px;
+  font-size:52px;line-height:1;color:var(--blue-mid);opacity:0.4;
+  font-family:Georgia,serif;font-weight:700}
+.island-quote-text{font-size:15px;font-style:italic;color:var(--text-mid);
+  line-height:1.7;margin-bottom:8px}
+.island-quote-source{font-size:12px;font-weight:700;color:var(--blue);
+  letter-spacing:.3px}
 .funfact-box-inline .ff-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#8a6310;margin-bottom:4px}
 .funfact-box-inline p{font-size:13px;color:#5a3d08;line-height:1.5}
 .map-wrap{position:relative;width:100%;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin-bottom:0}

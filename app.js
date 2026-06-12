@@ -320,7 +320,7 @@ function buildHeroGrid(key, isl) {
     const cell = document.createElement('div'); cell.className = 'hero-cell';
     cell.innerHTML = `<div class="photo-loading">${isl.emoji}</div>`;
     grid.appendChild(cell);
-    cell.onclick = () => window.open(googleImgURL(q, isl.name), '_blank');
+
     if (photos[idx]) {
       applyPhoto(cell, photos[idx]);
     } else {
