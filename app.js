@@ -299,7 +299,12 @@ function buildResults() {
     btn.textContent = `🗺️ Explore ${ri.name} →`;
     btn.onclick = () => { detailFromScreen = 'screen-results'; openDetail(r.key); };
     body.appendChild(btn); card.appendChild(pw); card.appendChild(body); rc.appendChild(card);
-    loadPhotoMulti(pw, [ri.best_hero, ri.name]);
+    // Use first curated hero photo if available, else fall back to Worker
+    if (ri.hero_photos && ri.hero_photos[0]) {
+      applyPhoto(pw, ri.hero_photos[0]);
+    } else {
+      loadPhotoMulti(pw, [ri.best_hero, ri.name]);
+    }
   });
 }
 
