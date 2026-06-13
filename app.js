@@ -420,7 +420,8 @@ function initTabClickHandler() {
     const search = el.getAttribute('data-search') || '', island = el.getAttribute('data-island') || '';
     const isTA = el.getAttribute('data-tripadvisor');
     if (!search) return;
-    window.open(isTA ? 'https://www.tripadvisor.com/Search?q=' + encodeURIComponent(search) : googleImgURL(search, island), '_blank');
+    const url = isTA ? 'https://www.tripadvisor.com/Search?q=' + encodeURIComponent(search) : googleImgURL(search, island);
+    window.location.href = url;
   });
 }
 
